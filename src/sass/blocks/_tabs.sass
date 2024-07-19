@@ -1,0 +1,132 @@
+.tabs
+    background-image: url(../img/1587646418_38-p-besshovnie-foni-dlya-saitov-112.jpg)
+    min-height: 960px
+    background-size: cover
+    &-title
+        padding-top: 10px
+        font-size: 15px
+        color: #fff
+        font-family: Montserrat
+        text-transform: uppercase
+        text-align: center
+        font-weight: 600
+        display: block
+        margin: 25px auto
+.tabs-catalog
+    padding-top: 50px
+    display: flex
+    justify-content: center
+    &__li
+        width: 250px
+        height: 45px
+        font-size: 20px
+        font-weight: 400
+        color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        border: none
+        background: #000
+        cursor: pointer
+        font-family: Montserrat
+        // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
+        // -size: 400% 400%
+        // animation: gradient 15s ease infinite
+        &:last-child
+            margin-right: 30px
+.tabs-content
+    padding-top: 30px
+    &__wrapper
+        display: flex
+        justify-content: center
+        min-height: 570px
+        p   
+            font-size: 18px
+            padding-right: 5px
+            padding-left: 5px
+            font-family: Nunito Sans
+            color: #fff
+            text-transform: uppercase
+            text-align: center
+            padding-bottom: 15px
+    &__card
+        min-width: 800px
+        min-height: 570px
+        background: rgb(0 0 0 / 50%)
+        border-radius: 25px
+        border: 1px solid #ffffff4f
+    &__title
+        font-size: 25px
+        min-width: 100%
+        background-color: #fff
+        text-transform: uppercase
+        min-height: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 25px 25px 0 0
+        border-bottom: 3px solid #00d2ff
+    &__item 
+        display: none
+    &__overview
+        margin-top: 20px
+#workText
+    padding-bottom: 15px    
+    font-size: 20px
+    color: #000
+    text-align: center
+    font-family: Montserrat
+    border: 0
+    max-height: 100%
+[data-work]
+    display: none
+#cardContent
+    max-width: 100%
+.tabs-content__item-active
+    display: block
+    animation: zoomIn 0.7s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards
+    transform:scale(0)
+.tabs-block
+    &__title
+        font-size: 40px
+        font-family: Montserrat
+        text-transform: uppercase
+        animation: gradient 10s linear infinite
+        background: linear-gradient(to right, #4cd969, #34aadc, #5856d9, #ff2d53, #ff2d53, #5856d9, #34aadc, #4cd969)
+        background-size: 400%
+        -webkit-background-clip: text
+        color: rgba(255, 255, 255, .1)
+        width: 360px
+        display: block
+        margin: 0 auto
+        padding-top: 50px
+        text-align: center
+.divider
+    width: 50%
+    height: 1px
+    background: #fff
+    posititon: relative
+    margin: 0 auto
+    margin-bottom: 30px
+
+@keyframes gradient
+    0%
+        background-position: 0% 50%
+    50%
+        background-position: 100% 50%
+    100%
+        background-position: 0% 50%
+
+@keyframes zoomIn
+    0%
+        transform: scale(0)
+
+    100%
+        transform: scale(1)
+
+@keyframes zoomOut
+    0%
+        transform: scale(1)
+
+    100%
+        transform: scale(0)
